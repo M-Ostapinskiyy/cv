@@ -1,0 +1,178 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: #EEEEEE;
+  }
+  
+  .container {
+    padding: 0;
+    width: 368px;
+    height: 699px;
+    left: 536px;
+    top: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 51.1542px 51.419px rgb(0 0 0 / 2%), 0px 31.2614px 32.7222px rgb(0 0 0 / 1%), 0px 19.7px 20.341px rgb(0 0 0 / 1%), 0px 12.1574px 11.8781px rgb(0 0 0 / 1%), 0px 6.89112px 6.09643px rgb(0 0 0 / 1%), 0px 3.01109px 2.28593px rgb(0 0 0 / 1%);
+    border-radius: 32px;
+    margin: 0 auto;
+  }
+  .container > .title {
+    width: 368px;
+    height: 259px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 32px;
+    background: conic-gradient(from 150.87deg at 103.4% 46.53%, rgba(235, 154, 255, 0) -40.06deg, #E9BBFF 38.62deg, rgba(218, 181, 255, 0) 133.46deg, rgba(235, 154, 255, 0) 319.94deg, #E9BBFF 398.62deg), radial-gradient(45.35% 79.11% at 10.46% 79.54%, #FFEF9C 0%, rgba(255, 226, 123, 0) 91.98%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(81.52% 108.49% at 44.57% -39.19%, #59FFEB 0%, rgba(135, 187, 255, 0.341236) 69.72%, rgba(158, 191, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 32px 32px 0 0;
+    font-size: 16px;
+    line-height: 0;
+ }
+ .title p.name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 15px;
+ }
+ .title p.description{
+    font-size: 14px;
+    color: #797979;
+    margin-top: 16px;
+    margin-bottom: 15px;
+ }
+ .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 24px;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tabs {
+    font-size: 0;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -37px;
+    text-align: center;
+  }
+  .tabs>input[type="radio"] {
+    display: none;
+  }
+  .tabs p.skills{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .tabs p.descriptionskills{
+    display: block;
+    line-height: 1.25;
+    font-size: 14px;
+    color: #797979;
+    margin-top: 5px;
+  }
+  #content-2 ul  {
+    list-style-type: circle;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 15px;
+  }
+  .progress-bar {
+    display: flex;
+    margin: 20px auto 0;
+  }
+  .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3 {
+    display: block;
+  }
+
+  .tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    color: #797979;
+  }
+
+  .tabs>label:not(:first-of-type) {
+    border-left: none;
+  }
+
+  .tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: bold;
+    color: #000000
+  }
+  a:hover {
+    color:darkred;
+  }
+  #content-2 p{
+    margin: 8px 0;
+  }
+  .content-title{
+    background: #d2fbff;
+    padding: 5px 10px 5px 5px;
+    font-weight: 700;
+    margin-top: 15px !important;
+  }
+  #content-2 ul{
+    margin-top: 10px;
+  }
+  #content-2 ul li{
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  #content-2 ul li > span{
+    display: block;
+    line-height: 1.25;
+    font-size: 14px;
+    color: #797979;
+    font-weight: 400;
+  }
+  #content-3 .item{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10px 0;
+  }
+#content-3 .item svg{
+  width: 1.2em;
+    height: 1.2em;
+    margin-right: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+  }
+  body{
+    margin: 0;
+    background: #FFFFFF;
+  }
+  .container > .title {
+    border-radius: 0;
+  }
+  
+}
